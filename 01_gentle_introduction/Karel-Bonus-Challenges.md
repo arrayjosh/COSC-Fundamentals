@@ -1,20 +1,20 @@
 # Karel Bonus Challenges
-Download the Bonus Challenge Karel worlds here.
+Download the Bonus Challenge Karel worlds [here](./bonus_challenges.zip).
 
 ## **Challenge 1**
 
-Write a program that teaches Karel to climb a mountain exactly like this: 
+Write a program that teaches Karel to climb a mountain exactly like this:
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_0EBB46D75DE125A72540B8D7FE385025D9A6C1D73A1E94DAA90302F1B8FF87D2_1518451914137_Screen+Shot+2018-02-12+at+9.11.36+AM.png)
 
 
-The steps involved are 
+The steps involved are
 
-1. Move up to the mountain. 
-2. Climb each of the four stair steps to reach the summit. 
-3. Plant a flag (represented by a beeper, of course) at the top of the mountain. 
-4. Climb down each of the four stair steps on the opposite side. 
-5. Move forward to the east end of the world. 
+1. Move up to the mountain.
+2. Climb each of the four stair steps to reach the summit.
+3. Plant a flag (represented by a beeper, of course) at the top of the mountain.
+4. Climb down each of the four stair steps on the opposite side.
+5. Move forward to the east end of the world.
 
 The final state of the world should look like this:
 
@@ -52,13 +52,12 @@ Thus, when Karel is done, the scene will look like this:
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_0EBB46D75DE125A72540B8D7FE385025D9A6C1D73A1E94DAA90302F1B8FF87D2_1518452778569_Screen+Shot+2018-02-12+at+9.25.46+AM.png)
 
 
-The situation that Karel faces need not match exactly the one shown in the diagram. There may be more trees; Karel simply continues the process until there are no beepers left in the beeper bag. The trees may also be of different heights or spaced differently than the ones shown in the diagram. Your task is to design a program that is general enough to solve any such problem, subject to the following assumptions: 
+The situation that Karel faces need not match exactly the one shown in the diagram. There may be more trees; Karel simply continues the process until there are no beepers left in the beeper bag. The trees may also be of different heights or spaced differently than the ones shown in the diagram. Your task is to design a program that is general enough to solve any such problem, subject to the following assumptions:
 
-- Karel starts at the origin facing east, somewhere west of the first tree. 
-- The trees are always separated by at least two corners, so that the leaves at the top don’t interfere with one another. 
-- The trees always end at least two corners below the top, so that the leaf cluster will not run into the top wall. 
-- Karel has just enough beepers to outfit all the trees. The original number of beepers must therefore be four times the number of trees. 
-- Karel should finish facing east at the bottom of the last tree. 
+- Karel starts at the origin facing east, somewhere west of the first tree.
+- The trees are always separated by at least two corners, so that the leaves at the top don’t interfere with one another.
+- The trees always end at least two corners below the top, so that the leaf cluster will not run into the top wall.
+- Karel has just enough beepers to outfit all the trees. The original number of beepers must therefore be four times the number of trees.
+- Karel should finish facing east at the bottom of the last tree.
 
 Think hard about what the parts of this program are and how you could break it down into simpler subproblems. What if there were only one tree? How does that simplify the problem, and how can you use the one-tree solution to help solve the more general case?
-
